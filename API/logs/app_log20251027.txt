@@ -1,0 +1,22 @@
+2025-10-27 10:56:18.034 +01:00 [INF] Application Tennis API démarrée
+2025-10-27 10:56:18.622 +01:00 [INF] Now listening on: https://localhost:7109
+2025-10-27 10:56:18.628 +01:00 [INF] Now listening on: http://localhost:5146
+2025-10-27 10:56:18.698 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-27 10:56:18.700 +01:00 [INF] Hosting environment: Development
+2025-10-27 10:56:18.703 +01:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-27 10:56:20.361 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-27 10:56:20.679 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 325.9812ms
+2025-10-27 10:56:20.742 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-27 10:56:20.742 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-27 10:56:20.758 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 16.3998ms
+2025-10-27 10:56:20.838 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 96.2864ms
+2025-10-27 10:56:20.925 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-27 10:56:20.963 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 38.2936ms
+2025-10-27 10:57:02.539 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/stats - null null
+2025-10-27 10:57:02.557 +01:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-27 10:57:02.589 +01:00 [INF] Route matched with {action = "GetStats", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetStats() on controller API.Controllers.PlayersController (API).
+2025-10-27 10:57:02.595 +01:00 [INF] Récupération des statistiques des joueurs.
+2025-10-27 10:57:02.657 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-27 10:57:02.670 +01:00 [INF] Executed action API.Controllers.PlayersController.GetStats (API) in 75.2097ms
+2025-10-27 10:57:02.674 +01:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-27 10:57:02.675 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/stats - 200 null application/json; charset=utf-8 136.9721ms

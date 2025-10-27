@@ -1,0 +1,65 @@
+2025-10-26 22:31:52.750 +01:00 [INF] Application Tennis API démarrée
+2025-10-26 22:31:53.322 +01:00 [INF] Now listening on: https://localhost:7109
+2025-10-26 22:31:53.329 +01:00 [INF] Now listening on: http://localhost:5146
+2025-10-26 22:31:53.515 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-26 22:31:53.528 +01:00 [INF] Hosting environment: Development
+2025-10-26 22:31:53.531 +01:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-26 22:31:56.178 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-26 22:31:57.593 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 1429.6731ms
+2025-10-26 22:31:57.610 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-26 22:31:57.610 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-26 22:31:57.671 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 46.1146ms
+2025-10-26 22:31:57.873 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 262.9535ms
+2025-10-26 22:31:58.150 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-26 22:31:58.301 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.0727ms
+2025-10-26 22:32:06.451 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-26 22:32:06.468 +01:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-26 22:32:06.519 +01:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-26 22:32:06.735 +01:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 201.8993ms
+2025-10-26 22:32:06.838 +01:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-26 22:32:07.150 +01:00 [ERR] Erreur non gérée capturée par le middleware.
+System.InvalidOperationException: Unable to resolve service for type 'Application.Interfaces.IPlayerService' while attempting to activate 'API.Controllers.PlayersController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Middlewares\ExceptionMiddleware.cs:line 21
+2025-10-26 22:32:07.286 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 500 null application/json; charset=utf-8 835.9653ms
+2025-10-26 22:32:51.003 +01:00 [INF] Application Tennis API démarrée
+2025-10-26 22:32:51.383 +01:00 [INF] Now listening on: https://localhost:7109
+2025-10-26 22:32:51.388 +01:00 [INF] Now listening on: http://localhost:5146
+2025-10-26 22:32:52.369 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-26 22:32:52.570 +01:00 [INF] Hosting environment: Development
+2025-10-26 22:32:52.576 +01:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-26 22:32:53.575 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-26 22:32:54.725 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 1178.2876ms
+2025-10-26 22:32:54.869 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-26 22:32:54.869 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-26 22:32:55.294 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 426.6982ms
+2025-10-26 22:32:55.320 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 454.2812ms
+2025-10-26 22:32:55.837 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-26 22:32:55.940 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 102.2805ms
+2025-10-26 22:33:01.553 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-26 22:33:01.562 +01:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-26 22:33:01.601 +01:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-26 22:33:01.610 +01:00 [INF] Récupération de la liste des joueurs.
+2025-10-26 22:33:01.751 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Entities.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:33:01.795 +01:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 180.0388ms
+2025-10-26 22:33:01.799 +01:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-26 22:33:01.805 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 252.3954ms
+2025-10-26 22:33:17.825 +01:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/stats - null null
+2025-10-26 22:33:17.834 +01:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-26 22:33:17.850 +01:00 [INF] Route matched with {action = "GetStats", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetStats() on controller API.Controllers.PlayersController (API).
+2025-10-26 22:33:17.855 +01:00 [INF] Récupération des statistiques des joueurs.
+2025-10-26 22:33:17.876 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-26 22:33:17.888 +01:00 [INF] Executed action API.Controllers.PlayersController.GetStats (API) in 33.7262ms
+2025-10-26 22:33:17.892 +01:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-26 22:33:17.893 +01:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/stats - 200 null application/json; charset=utf-8 69.495ms

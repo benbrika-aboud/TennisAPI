@@ -1,0 +1,499 @@
+2025-10-24 16:56:42.571 +02:00 [INF] Starting web host
+2025-10-24 16:56:43.907 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-24 16:56:44.229 +02:00 [DBG] Hosting starting
+2025-10-24 16:56:44.262 +02:00 [DBG] Middleware loaded
+2025-10-24 16:56:44.266 +02:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16491 B).
+2025-10-24 16:56:44.270 +02:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-24 16:56:44.448 +02:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-24 16:56:44.587 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-24 16:56:44.589 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-24 16:56:44.591 +02:00 [DBG] Loaded hosting startup assembly API
+2025-10-24 16:56:44.592 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-24 16:56:44.593 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-24 16:56:44.594 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-24 16:56:44.617 +02:00 [DBG] Connection id "0HNGJ1M688AC9" accepted.
+2025-10-24 16:56:44.617 +02:00 [DBG] Connection id "0HNGJ1M688AC8" accepted.
+2025-10-24 16:56:44.620 +02:00 [DBG] Connection id "0HNGJ1M688AC9" started.
+2025-10-24 16:56:44.620 +02:00 [DBG] Connection id "0HNGJ1M688AC8" started.
+2025-10-24 16:56:44.636 +02:00 [DBG] Connection id "0HNGJ1M688AC8" received FIN.
+2025-10-24 16:56:44.636 +02:00 [DBG] Connection id "0HNGJ1M688AC9" received FIN.
+2025-10-24 16:56:44.850 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-24 16:56:44.878 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-24 16:56:44.850 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-24 16:56:44.911 +02:00 [INF] Hosting environment: Development
+2025-10-24 16:56:44.916 +02:00 [DBG] Connection id "0HNGJ1M688AC9" stopped.
+2025-10-24 16:56:44.920 +02:00 [DBG] Connection id "0HNGJ1M688AC8" stopped.
+2025-10-24 16:56:44.921 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-24 16:56:44.927 +02:00 [DBG] Hosting started
+2025-10-24 16:56:44.929 +02:00 [DBG] Connection id "0HNGJ1M688AC9" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 16:56:44.929 +02:00 [DBG] Connection id "0HNGJ1M688AC8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 16:56:46.509 +02:00 [DBG] Connection id "0HNGJ1M688ACA" accepted.
+2025-10-24 16:56:46.517 +02:00 [DBG] Connection id "0HNGJ1M688ACA" started.
+2025-10-24 16:56:46.519 +02:00 [DBG] Connection id "0HNGJ1M688ACB" accepted.
+2025-10-24 16:56:46.533 +02:00 [DBG] Connection id "0HNGJ1M688ACB" started.
+2025-10-24 16:56:46.598 +02:00 [DBG] Connection id "0HNGJ1M688ACA" received FIN.
+2025-10-24 16:56:46.632 +02:00 [DBG] Connection 0HNGJ1M688ACB established using the following protocol: "Tls13"
+2025-10-24 16:56:46.633 +02:00 [DBG] Connection 0HNGJ1M688ACA established using the following protocol: "Tls13"
+2025-10-24 16:56:46.672 +02:00 [DBG] Connection id "0HNGJ1M688ACA" is closed. The last processed stream ID was 0.
+2025-10-24 16:56:46.677 +02:00 [DBG] Connection id "0HNGJ1M688ACA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 16:56:46.683 +02:00 [DBG] The connection queue processing loop for 0HNGJ1M688ACA completed.
+2025-10-24 16:56:46.689 +02:00 [DBG] Connection id "0HNGJ1M688ACA" stopped.
+2025-10-24 16:56:46.731 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger - null null
+2025-10-24 16:56:46.979 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-24 16:56:47.003 +02:00 [DBG] No candidates found for the request path '/swagger'
+2025-10-24 16:56:47.004 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:56:47.020 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger - 301 0 null 298.063ms
+2025-10-24 16:56:47.050 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-24 16:56:47.058 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-24 16:56:47.060 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:56:47.121 +02:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-10-24 16:56:47.124 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-24 16:56:47.144 +02:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-10-24 16:56:47.147 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-24 16:56:47.149 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 99.0071ms
+2025-10-24 16:56:47.172 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/swagger-ui.css - null null
+2025-10-24 16:56:47.174 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-24 16:56:47.174 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/swagger-ui-bundle.js - null null
+2025-10-24 16:56:47.174 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-24 16:56:47.188 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2025-10-24 16:56:47.177 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2025-10-24 16:56:47.174 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-24 16:56:47.206 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:56:47.209 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:56:47.219 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2025-10-24 16:56:47.198 +02:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-10-24 16:56:47.225 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:56:47.228 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 53.7221ms
+2025-10-24 16:56:47.276 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-24 16:56:47.276 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-24 16:56:47.283 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 109.2275ms
+2025-10-24 16:56:47.283 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/swagger-ui.css - 200 152034 text/css 111.2348ms
+2025-10-24 16:56:47.320 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-24 16:56:47.323 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 149.1017ms
+2025-10-24 16:56:47.389 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 214.8484ms
+2025-10-24 16:56:47.591 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-24 16:56:47.592 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/favicon-32x32.png - null null
+2025-10-24 16:56:47.598 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-24 16:56:47.605 +02:00 [DBG] No candidates found for the request path '/swagger/favicon-32x32.png'
+2025-10-24 16:56:47.607 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:56:47.614 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:56:47.630 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-24 16:56:47.639 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/favicon-32x32.png - 200 628 image/png 47.1762ms
+2025-10-24 16:56:47.649 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 57.8841ms
+2025-10-24 16:56:52.233 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-24 16:56:52.245 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Players'
+2025-10-24 16:56:52.251 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.GetAll (API)' with route pattern 'api/Players' is valid for the request path '/api/Players'
+2025-10-24 16:56:52.255 +02:00 [DBG] Request matched endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 16:56:52.258 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-24 16:56:52.260 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 16:56:52.289 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller API.Controllers.PlayersController (API).
+2025-10-24 16:56:52.293 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-24 16:56:52.295 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-24 16:56:52.297 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-24 16:56:52.299 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-24 16:56:52.303 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-24 16:56:52.306 +02:00 [DBG] Executing controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 16:56:52.309 +02:00 [WRN] File not found: C:\Users\Lenovo2025\source\repos\TennisAPI\API\headtohead.json. Creating new dataset.
+2025-10-24 16:56:52.310 +02:00 [DBG] Executed controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 16:56:52.313 +02:00 [INF] GET /api/players called
+2025-10-24 16:56:52.314 +02:00 [DBG] Fetching all players.
+2025-10-24 16:56:52.318 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-24 16:56:52.323 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-10-24 16:56:52.324 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-24 16:56:52.326 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-24 16:56:52.327 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-24 16:56:52.329 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-24 16:56:52.340 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAll (API) in 32.1868ms
+2025-10-24 16:56:52.342 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 16:56:52.344 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 111.4529ms
+2025-10-24 16:56:55.074 +02:00 [DBG] Connection id "0HNGJ1M688ACB" received FIN.
+2025-10-24 16:56:55.077 +02:00 [DBG] Connection id "0HNGJ1M688ACB" is closed. The last processed stream ID was 19.
+2025-10-24 16:56:55.078 +02:00 [DBG] The connection queue processing loop for 0HNGJ1M688ACB completed.
+2025-10-24 16:56:55.079 +02:00 [DBG] Connection id "0HNGJ1M688ACB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 16:56:55.089 +02:00 [DBG] Connection id "0HNGJ1M688ACB" stopped.
+2025-10-24 16:57:17.206 +02:00 [INF] Starting web host
+2025-10-24 16:57:18.811 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-24 16:57:18.895 +02:00 [DBG] Hosting starting
+2025-10-24 16:57:18.919 +02:00 [DBG] Middleware loaded
+2025-10-24 16:57:18.921 +02:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16491 B).
+2025-10-24 16:57:18.923 +02:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-24 16:57:19.030 +02:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-24 16:57:19.157 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-24 16:57:19.160 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-24 16:57:19.161 +02:00 [DBG] Loaded hosting startup assembly API
+2025-10-24 16:57:19.162 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-24 16:57:19.164 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-24 16:57:19.165 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-24 16:57:19.340 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-24 16:57:19.343 +02:00 [INF] Hosting environment: Development
+2025-10-24 16:57:19.344 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-24 16:57:19.346 +02:00 [DBG] Hosting started
+2025-10-24 16:57:19.616 +02:00 [DBG] Connection id "0HNGJ1MGM13IR" received FIN.
+2025-10-24 16:57:19.616 +02:00 [DBG] Connection id "0HNGJ1MGM13IQ" received FIN.
+2025-10-24 16:57:19.625 +02:00 [DBG] Connection id "0HNGJ1MGM13IQ" accepted.
+2025-10-24 16:57:19.625 +02:00 [DBG] Connection id "0HNGJ1MGM13IR" accepted.
+2025-10-24 16:57:19.629 +02:00 [DBG] Connection id "0HNGJ1MGM13IQ" started.
+2025-10-24 16:57:19.630 +02:00 [DBG] Connection id "0HNGJ1MGM13IR" started.
+2025-10-24 16:57:20.163 +02:00 [DBG] Connection id "0HNGJ1MGM13IS" accepted.
+2025-10-24 16:57:20.167 +02:00 [DBG] Connection id "0HNGJ1MGM13IS" started.
+2025-10-24 16:57:20.169 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-24 16:57:20.169 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-24 16:57:20.274 +02:00 [DBG] Connection id "0HNGJ1MGM13IR" stopped.
+2025-10-24 16:57:20.278 +02:00 [DBG] Connection id "0HNGJ1MGM13IQ" stopped.
+2025-10-24 16:57:20.292 +02:00 [DBG] Connection id "0HNGJ1MGM13IQ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 16:57:20.292 +02:00 [DBG] Connection id "0HNGJ1MGM13IR" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 16:57:20.298 +02:00 [DBG] Connection 0HNGJ1MGM13IS established using the following protocol: "Tls13"
+2025-10-24 16:57:20.407 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-24 16:57:20.533 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-24 16:57:20.555 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-24 16:57:20.558 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:57:20.640 +02:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-10-24 16:57:20.642 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-24 16:57:20.669 +02:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-10-24 16:57:20.673 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-24 16:57:20.683 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 287.9719ms
+2025-10-24 16:57:20.689 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-24 16:57:20.689 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-24 16:57:20.705 +02:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-10-24 16:57:20.709 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 20.7064ms
+2025-10-24 16:57:20.756 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 67.2938ms
+2025-10-24 16:57:20.952 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-24 16:57:20.961 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-24 16:57:20.964 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 16:57:20.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 41.7923ms
+2025-10-24 16:57:23.684 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-24 16:57:23.696 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Players'
+2025-10-24 16:57:23.702 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.GetAll (API)' with route pattern 'api/Players' is valid for the request path '/api/Players'
+2025-10-24 16:57:23.706 +02:00 [DBG] Request matched endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 16:57:23.710 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-24 16:57:23.712 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 16:57:23.741 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller API.Controllers.PlayersController (API).
+2025-10-24 16:57:23.748 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-24 16:57:23.750 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-24 16:57:23.752 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-24 16:57:23.754 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-24 16:57:23.756 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-24 16:57:23.760 +02:00 [DBG] Executing controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 16:57:23.763 +02:00 [WRN] File not found: C:\Users\Lenovo2025\source\repos\TennisAPI\API\headtohead.json. Creating new dataset.
+2025-10-24 16:57:23.765 +02:00 [DBG] Executed controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 16:57:23.767 +02:00 [INF] GET /api/players called
+2025-10-24 16:57:23.768 +02:00 [DBG] Fetching all players.
+2025-10-24 16:57:23.771 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-24 16:57:23.777 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-10-24 16:57:23.778 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-24 16:57:23.779 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-24 16:57:23.781 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-24 16:57:23.783 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-24 16:57:23.796 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAll (API) in 32.946ms
+2025-10-24 16:57:23.800 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 16:57:23.801 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 118.4041ms
+2025-10-24 16:57:30.124 +02:00 [DBG] Connection id "0HNGJ1MGM13IS" received FIN.
+2025-10-24 16:57:30.130 +02:00 [DBG] The connection queue processing loop for 0HNGJ1MGM13IS completed.
+2025-10-24 16:57:30.133 +02:00 [DBG] Connection id "0HNGJ1MGM13IS" is closed. The last processed stream ID was 9.
+2025-10-24 16:57:30.135 +02:00 [DBG] Connection id "0HNGJ1MGM13IS" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 16:57:30.153 +02:00 [DBG] Connection id "0HNGJ1MGM13IS" stopped.
+2025-10-24 17:01:48.412 +02:00 [INF] Starting web host
+2025-10-24 17:01:49.662 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-24 17:01:49.731 +02:00 [DBG] Hosting starting
+2025-10-24 17:01:49.749 +02:00 [DBG] Middleware loaded
+2025-10-24 17:01:49.752 +02:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16491 B).
+2025-10-24 17:01:49.754 +02:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-24 17:01:49.926 +02:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-24 17:01:50.058 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-24 17:01:50.061 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-24 17:01:50.062 +02:00 [DBG] Loaded hosting startup assembly API
+2025-10-24 17:01:50.063 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-24 17:01:50.064 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-24 17:01:50.065 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-24 17:01:50.123 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-24 17:01:50.125 +02:00 [INF] Hosting environment: Development
+2025-10-24 17:01:50.128 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-24 17:01:50.130 +02:00 [DBG] Hosting started
+2025-10-24 17:01:50.300 +02:00 [DBG] Connection id "0HNGJ1P1BF43O" received FIN.
+2025-10-24 17:01:50.300 +02:00 [DBG] Connection id "0HNGJ1P1BF43N" received FIN.
+2025-10-24 17:01:50.308 +02:00 [DBG] Connection id "0HNGJ1P1BF43O" accepted.
+2025-10-24 17:01:50.308 +02:00 [DBG] Connection id "0HNGJ1P1BF43N" accepted.
+2025-10-24 17:01:50.311 +02:00 [DBG] Connection id "0HNGJ1P1BF43O" started.
+2025-10-24 17:01:50.312 +02:00 [DBG] Connection id "0HNGJ1P1BF43N" started.
+2025-10-24 17:01:50.499 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-24 17:01:50.499 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-24 17:01:50.557 +02:00 [DBG] Connection id "0HNGJ1P1BF43N" stopped.
+2025-10-24 17:01:50.557 +02:00 [DBG] Connection id "0HNGJ1P1BF43O" stopped.
+2025-10-24 17:01:50.569 +02:00 [DBG] Connection id "0HNGJ1P1BF43N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:01:50.569 +02:00 [DBG] Connection id "0HNGJ1P1BF43O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:01:51.168 +02:00 [DBG] Connection id "0HNGJ1P1BF43P" accepted.
+2025-10-24 17:01:51.292 +02:00 [DBG] Connection id "0HNGJ1P1BF43P" started.
+2025-10-24 17:01:51.378 +02:00 [DBG] Connection 0HNGJ1P1BF43P established using the following protocol: "Tls13"
+2025-10-24 17:01:51.523 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-24 17:01:51.692 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-24 17:01:51.714 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-24 17:01:51.716 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 17:01:51.777 +02:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-10-24 17:01:51.782 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-24 17:01:51.804 +02:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-10-24 17:01:51.808 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-24 17:01:51.820 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-24 17:01:51.820 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-24 17:01:51.820 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 319.0316ms
+2025-10-24 17:01:51.839 +02:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-10-24 17:01:51.861 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 41.412ms
+2025-10-24 17:01:51.909 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.2651ms
+2025-10-24 17:01:51.967 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-24 17:01:51.972 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-24 17:01:51.973 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 17:01:51.995 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.6635ms
+2025-10-24 17:01:55.236 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-24 17:01:55.246 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Players'
+2025-10-24 17:01:55.251 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.GetAll (API)' with route pattern 'api/Players' is valid for the request path '/api/Players'
+2025-10-24 17:01:55.254 +02:00 [DBG] Request matched endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:01:55.260 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-24 17:01:55.264 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:01:55.292 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller API.Controllers.PlayersController (API).
+2025-10-24 17:01:55.298 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-24 17:01:55.300 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-24 17:01:55.302 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-24 17:01:55.305 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-24 17:01:55.307 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-24 17:01:55.313 +02:00 [DBG] Executing controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:01:55.370 +02:00 [INF] Loaded 5 players from C:\Users\Lenovo2025\source\repos\TennisAPI\API\Data\headtohead.json
+2025-10-24 17:01:55.374 +02:00 [DBG] Executed controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:01:55.378 +02:00 [INF] GET /api/players called
+2025-10-24 17:01:55.380 +02:00 [DBG] Fetching all players.
+2025-10-24 17:01:55.383 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-24 17:01:55.388 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-10-24 17:01:55.390 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-24 17:01:55.394 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-24 17:01:55.396 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-24 17:01:55.398 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-24 17:01:55.413 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAll (API) in 96.8168ms
+2025-10-24 17:01:55.416 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:01:55.418 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 181.6093ms
+2025-10-24 17:02:00.508 +02:00 [DBG] Connection id "0HNGJ1P1BF43P" received FIN.
+2025-10-24 17:02:00.524 +02:00 [DBG] The connection queue processing loop for 0HNGJ1P1BF43P completed.
+2025-10-24 17:02:00.532 +02:00 [DBG] Connection id "0HNGJ1P1BF43P" is closed. The last processed stream ID was 9.
+2025-10-24 17:02:00.537 +02:00 [DBG] Connection id "0HNGJ1P1BF43P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:02:00.547 +02:00 [DBG] Connection id "0HNGJ1P1BF43P" stopped.
+2025-10-24 17:02:54.906 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q" accepted.
+2025-10-24 17:02:54.909 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q" started.
+2025-10-24 17:02:54.926 +02:00 [DBG] Connection 0HNGJ1P1BF43Q established using the following protocol: "Tls13"
+2025-10-24 17:02:54.935 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7109/api/Players - application/json 490
+2025-10-24 17:02:54.938 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Players'
+2025-10-24 17:02:54.940 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.Create (API)' with route pattern 'api/Players' is valid for the request path '/api/Players'
+2025-10-24 17:02:54.943 +02:00 [DBG] Request matched endpoint 'API.Controllers.PlayersController.Create (API)'
+2025-10-24 17:02:54.945 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-24 17:02:54.946 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.Create (API)'
+2025-10-24 17:02:54.954 +02:00 [INF] Route matched with {action = "Create", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Create(Domain.Player) on controller API.Controllers.PlayersController (API).
+2025-10-24 17:02:54.958 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-24 17:02:54.960 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-24 17:02:54.962 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-24 17:02:54.964 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-24 17:02:54.966 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-24 17:02:54.968 +02:00 [DBG] Executing controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:02:54.969 +02:00 [DBG] Executed controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:02:54.990 +02:00 [DBG] Attempting to bind parameter 'player' of type 'Domain.Player' ...
+2025-10-24 17:02:54.995 +02:00 [DBG] Attempting to bind parameter 'player' of type 'Domain.Player' using the name '' in request data ...
+2025-10-24 17:02:54.999 +02:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2025-10-24 17:02:55.006 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q", Request id "0HNGJ1P1BF43Q:00000001": started reading request body.
+2025-10-24 17:02:55.010 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q", Request id "0HNGJ1P1BF43Q:00000001": done reading request body.
+2025-10-24 17:02:55.015 +02:00 [DBG] JSON input formatter succeeded, deserializing to type 'Domain.Player'
+2025-10-24 17:02:55.019 +02:00 [DBG] Done attempting to bind parameter 'player' of type 'Domain.Player'.
+2025-10-24 17:02:55.020 +02:00 [DBG] Done attempting to bind parameter 'player' of type 'Domain.Player'.
+2025-10-24 17:02:55.022 +02:00 [DBG] Attempting to validate the bound parameter 'player' of type 'Domain.Player' ...
+2025-10-24 17:02:55.036 +02:00 [DBG] Done attempting to validate the bound parameter 'player' of type 'Domain.Player'.
+2025-10-24 17:02:55.039 +02:00 [INF] POST /api/players called
+2025-10-24 17:02:55.044 +02:00 [INF] Data saved successfully to C:\Users\Lenovo2025\source\repos\TennisAPI\API\Data\headtohead.json.
+2025-10-24 17:02:55.047 +02:00 [INF] Added player 103 - Roger Federer.
+2025-10-24 17:02:55.051 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-24 17:02:55.054 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-10-24 17:02:55.055 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-24 17:02:55.056 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-24 17:02:55.059 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-24 17:02:55.062 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'Domain.Player'.
+2025-10-24 17:02:55.086 +02:00 [DBG] Found the endpoints ["API.Controllers.PlayersController.GetById (API)"] for address (id=[103],action=[GetById],controller=[Players])
+2025-10-24 17:02:55.095 +02:00 [DBG] Successfully processed template api/Players/{id} for API.Controllers.PlayersController.GetById (API) resulting in /api/Players/103 and 
+2025-10-24 17:02:55.100 +02:00 [DBG] Link generation succeeded for endpoints ["API.Controllers.PlayersController.GetById (API)"] with result /api/Players/103
+2025-10-24 17:02:55.105 +02:00 [INF] Executed action API.Controllers.PlayersController.Create (API) in 136.8022ms
+2025-10-24 17:02:55.106 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.Create (API)'
+2025-10-24 17:02:55.109 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7109/api/Players - 201 null application/json; charset=utf-8 174.0081ms
+2025-10-24 17:03:00.586 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q" received FIN.
+2025-10-24 17:03:00.588 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q" is closed. The last processed stream ID was 1.
+2025-10-24 17:03:00.588 +02:00 [DBG] The connection queue processing loop for 0HNGJ1P1BF43Q completed.
+2025-10-24 17:03:00.590 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:03:00.602 +02:00 [DBG] Connection id "0HNGJ1P1BF43Q" stopped.
+2025-10-24 17:03:04.011 +02:00 [DBG] Connection id "0HNGJ1P1BF43R" accepted.
+2025-10-24 17:03:04.014 +02:00 [DBG] Connection id "0HNGJ1P1BF43R" started.
+2025-10-24 17:03:04.021 +02:00 [DBG] Connection 0HNGJ1P1BF43R established using the following protocol: "Tls13"
+2025-10-24 17:03:04.027 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-24 17:03:04.041 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Players'
+2025-10-24 17:03:04.042 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.GetAll (API)' with route pattern 'api/Players' is valid for the request path '/api/Players'
+2025-10-24 17:03:04.045 +02:00 [DBG] Request matched endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:03:04.046 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-24 17:03:04.047 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:03:04.050 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller API.Controllers.PlayersController (API).
+2025-10-24 17:03:04.053 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-24 17:03:04.055 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-24 17:03:04.056 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-24 17:03:04.059 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-24 17:03:04.061 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-24 17:03:04.062 +02:00 [DBG] Executing controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:03:04.065 +02:00 [DBG] Executed controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:03:04.069 +02:00 [INF] GET /api/players called
+2025-10-24 17:03:04.070 +02:00 [DBG] Fetching all players.
+2025-10-24 17:03:04.071 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-24 17:03:04.074 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-10-24 17:03:04.075 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-24 17:03:04.076 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-24 17:03:04.077 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-24 17:03:04.079 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-24 17:03:04.081 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAll (API) in 18.0911ms
+2025-10-24 17:03:04.084 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:03:04.087 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 61.0455ms
+2025-10-24 17:03:10.604 +02:00 [DBG] Connection id "0HNGJ1P1BF43R" received FIN.
+2025-10-24 17:03:10.606 +02:00 [DBG] Connection id "0HNGJ1P1BF43R" is closed. The last processed stream ID was 1.
+2025-10-24 17:03:10.606 +02:00 [DBG] The connection queue processing loop for 0HNGJ1P1BF43R completed.
+2025-10-24 17:03:10.608 +02:00 [DBG] Connection id "0HNGJ1P1BF43R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:03:10.619 +02:00 [DBG] Connection id "0HNGJ1P1BF43R" stopped.
+2025-10-24 17:39:03.116 +02:00 [INF] Starting web host
+2025-10-24 17:39:05.222 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2025-10-24 17:39:05.295 +02:00 [DBG] Hosting starting
+2025-10-24 17:39:05.323 +02:00 [DBG] Middleware loaded
+2025-10-24 17:39:05.326 +02:00 [DBG] Middleware loaded. Script /_framework/aspnetcore-browser-refresh.js (16491 B).
+2025-10-24 17:39:05.328 +02:00 [DBG] Middleware loaded. Script /_framework/blazor-hotreload.js (799 B).
+2025-10-24 17:39:05.483 +02:00 [DBG] Middleware loaded: DOTNET_MODIFIABLE_ASSEMBLIES=debug, __ASPNETCORE_BROWSER_TOOLS=true
+2025-10-24 17:39:05.637 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-24 17:39:05.638 +02:00 [DBG] Connection id "0HNGJ2DRHA9TF" received FIN.
+2025-10-24 17:39:05.639 +02:00 [DBG] Connection id "0HNGJ2DRHA9TF" accepted.
+2025-10-24 17:39:05.640 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-24 17:39:05.643 +02:00 [DBG] Connection id "0HNGJ2DRHA9TF" started.
+2025-10-24 17:39:05.644 +02:00 [DBG] Loaded hosting startup assembly API
+2025-10-24 17:39:05.646 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2025-10-24 17:39:05.648 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2025-10-24 17:39:05.649 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2025-10-24 17:39:05.863 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2025-10-24 17:39:06.109 +02:00 [DBG] Connection id "0HNGJ2DRHA9TF" stopped.
+2025-10-24 17:39:06.120 +02:00 [DBG] Connection id "0HNGJ2DRHA9TF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:39:06.134 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-24 17:39:06.137 +02:00 [INF] Hosting environment: Development
+2025-10-24 17:39:06.139 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-24 17:39:06.141 +02:00 [DBG] Hosting started
+2025-10-24 17:39:06.351 +02:00 [DBG] Connection id "0HNGJ2DRHA9TG" accepted.
+2025-10-24 17:39:06.379 +02:00 [DBG] Connection id "0HNGJ2DRHA9TG" started.
+2025-10-24 17:39:06.514 +02:00 [DBG] Connection 0HNGJ2DRHA9TG established using the following protocol: "Tls13"
+2025-10-24 17:39:06.647 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-24 17:39:06.781 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2025-10-24 17:39:06.801 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2025-10-24 17:39:06.804 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 17:39:06.876 +02:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2025-10-24 17:39:06.879 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2025-10-24 17:39:06.950 +02:00 [DBG] Response markup was updated to include Browser Link script injection.
+2025-10-24 17:39:06.954 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2025-10-24 17:39:06.964 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 337.5804ms
+2025-10-24 17:39:06.987 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-24 17:39:06.989 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-24 17:39:07.019 +02:00 [DBG] Script injected: /_framework/aspnetcore-browser-refresh.js
+2025-10-24 17:39:07.023 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 35.4719ms
+2025-10-24 17:39:07.092 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 105.3735ms
+2025-10-24 17:39:07.189 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-24 17:39:07.193 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2025-10-24 17:39:07.194 +02:00 [DBG] Request did not match any endpoints
+2025-10-24 17:39:07.205 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.5953ms
+2025-10-24 17:39:09.048 +02:00 [DBG] Connection id "0HNGJ2DRHA9TG" received FIN.
+2025-10-24 17:39:09.063 +02:00 [DBG] The connection queue processing loop for 0HNGJ2DRHA9TG completed.
+2025-10-24 17:39:09.066 +02:00 [DBG] Connection id "0HNGJ2DRHA9TG" is closed. The last processed stream ID was 7.
+2025-10-24 17:39:09.069 +02:00 [DBG] Connection id "0HNGJ2DRHA9TG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:39:09.081 +02:00 [DBG] Connection id "0HNGJ2DRHA9TG" stopped.
+2025-10-24 17:39:10.854 +02:00 [DBG] Connection id "0HNGJ2DRHA9TH" accepted.
+2025-10-24 17:39:10.857 +02:00 [DBG] Connection id "0HNGJ2DRHA9TH" started.
+2025-10-24 17:39:10.864 +02:00 [DBG] Connection 0HNGJ2DRHA9TH established using the following protocol: "Tls13"
+2025-10-24 17:39:10.870 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-24 17:39:10.877 +02:00 [DBG] 1 candidate(s) found for the request path '/api/Players'
+2025-10-24 17:39:10.883 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.GetAll (API)' with route pattern 'api/Players' is valid for the request path '/api/Players'
+2025-10-24 17:39:10.886 +02:00 [DBG] Request matched endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:39:10.890 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-24 17:39:10.894 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:39:10.924 +02:00 [INF] Route matched with {action = "GetAll", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller API.Controllers.PlayersController (API).
+2025-10-24 17:39:10.931 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-24 17:39:10.935 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-24 17:39:10.938 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-24 17:39:10.941 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-24 17:39:10.943 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-24 17:39:10.948 +02:00 [DBG] Executing controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:39:11.035 +02:00 [DBG] Executed controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:39:11.039 +02:00 [INF] GET /api/players called
+2025-10-24 17:39:11.042 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-24 17:39:11.048 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-10-24 17:39:11.049 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-24 17:39:11.051 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-24 17:39:11.052 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-24 17:39:11.054 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-24 17:39:11.065 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAll (API) in 116.6072ms
+2025-10-24 17:39:11.068 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAll (API)'
+2025-10-24 17:39:11.070 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 199.6849ms
+2025-10-24 17:39:14.035 +02:00 [DBG] Connection id "0HNGJ2DRHA9TH" received FIN.
+2025-10-24 17:39:14.043 +02:00 [DBG] Connection id "0HNGJ2DRHA9TH" is closed. The last processed stream ID was 1.
+2025-10-24 17:39:14.043 +02:00 [DBG] The connection queue processing loop for 0HNGJ2DRHA9TH completed.
+2025-10-24 17:39:14.045 +02:00 [DBG] Connection id "0HNGJ2DRHA9TH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2025-10-24 17:39:14.064 +02:00 [DBG] Connection id "0HNGJ2DRHA9TH" stopped.
+2025-10-24 17:39:24.091 +02:00 [DBG] Connection id "0HNGJ2DRHA9TI" accepted.
+2025-10-24 17:39:24.095 +02:00 [DBG] Connection id "0HNGJ2DRHA9TI" started.
+2025-10-24 17:39:24.101 +02:00 [DBG] Connection 0HNGJ2DRHA9TI established using the following protocol: "Tls13"
+2025-10-24 17:39:24.105 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/stats - null null
+2025-10-24 17:39:24.112 +02:00 [DBG] 2 candidate(s) found for the request path '/api/Players/stats'
+2025-10-24 17:39:24.114 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.Stats (API)' with route pattern 'api/Players/stats' is valid for the request path '/api/Players/stats'
+2025-10-24 17:39:24.117 +02:00 [DBG] Endpoint 'API.Controllers.PlayersController.GetById (API)' with route pattern 'api/Players/{id}' is valid for the request path '/api/Players/stats'
+2025-10-24 17:39:24.119 +02:00 [DBG] Request matched endpoint 'API.Controllers.PlayersController.Stats (API)'
+2025-10-24 17:39:24.120 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2025-10-24 17:39:24.121 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.Stats (API)'
+2025-10-24 17:39:24.124 +02:00 [INF] Route matched with {action = "Stats", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Stats() on controller API.Controllers.PlayersController (API).
+2025-10-24 17:39:24.128 +02:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2025-10-24 17:39:24.129 +02:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2025-10-24 17:39:24.132 +02:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2025-10-24 17:39:24.135 +02:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2025-10-24 17:39:24.136 +02:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2025-10-24 17:39:24.138 +02:00 [DBG] Executing controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:39:24.139 +02:00 [DBG] Executed controller factory for controller API.Controllers.PlayersController (API)
+2025-10-24 17:39:24.141 +02:00 [INF] GET /api/players/stats called
+2025-10-24 17:39:24.157 +02:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2025-10-24 17:39:24.160 +02:00 [DBG] No information found on request to perform content negotiation.
+2025-10-24 17:39:24.161 +02:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2025-10-24 17:39:24.163 +02:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2025-10-24 17:39:24.164 +02:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2025-10-24 17:39:24.167 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-24 17:39:24.176 +02:00 [INF] Executed action API.Controllers.PlayersController.Stats (API) in 38.7073ms
+2025-10-24 17:39:24.179 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.Stats (API)'
+2025-10-24 17:39:24.181 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/stats - 200 null application/json; charset=utf-8 76.4043ms

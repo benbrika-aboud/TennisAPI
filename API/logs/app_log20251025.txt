@@ -1,0 +1,515 @@
+2025-10-25 14:24:03.985 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 14:24:04.391 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 14:24:04.395 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 14:24:04.460 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 14:24:04.462 +02:00 [INF] Hosting environment: Development
+2025-10-25 14:24:04.463 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 14:24:06.020 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 14:24:06.646 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 637.5271ms
+2025-10-25 14:24:06.658 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 14:24:06.658 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 14:24:06.682 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 24.3667ms
+2025-10-25 14:24:06.813 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 155.8903ms
+2025-10-25 14:24:06.887 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 14:24:06.915 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 28.7657ms
+2025-10-25 14:24:11.584 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:24:11.592 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:24:11.624 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:24:11.631 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:24:11.727 +02:00 [ERR] Erreur lors de la lecture du fichier JSON.
+System.IO.FileNotFoundException: Le fichier JSON est introuvable.
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 23
+2025-10-25 14:24:11.950 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 318.4564ms
+2025-10-25 14:24:12.009 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:24:12.103 +02:00 [ERR] Erreur non gérée capturée par le middleware.
+System.IO.FileNotFoundException: Le fichier JSON est introuvable.
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 23
+   at Infrastructure.Repositories.PlayerRepository.GetAll() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Repositories\PlayerRepository.cs:line 23
+   at Application.Services.PlayerService.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\Application\Services\PlayerService.cs:line 21
+   at API.Controllers.PlayersController.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Controllers\PlayersController.cs:line 27
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Middlewares\ExceptionMiddleware.cs:line 21
+2025-10-25 14:24:12.163 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 404 null application/json; charset=utf-8 580.5813ms
+2025-10-25 14:25:08.562 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 14:25:08.952 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 14:25:08.959 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 14:25:09.011 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 14:25:09.014 +02:00 [INF] Hosting environment: Development
+2025-10-25 14:25:09.015 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 14:25:09.697 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 14:25:09.913 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 232.2847ms
+2025-10-25 14:25:09.927 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 14:25:09.927 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 14:25:09.945 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 17.6576ms
+2025-10-25 14:25:10.010 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.6439ms
+2025-10-25 14:25:10.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 14:25:10.128 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.8208ms
+2025-10-25 14:25:27.461 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:25:27.472 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:25:27.494 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:25:27.500 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:25:27.587 +02:00 [ERR] Erreur lors de la lecture du fichier JSON.
+System.IO.FileNotFoundException: Le fichier JSON est introuvable.
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 23
+2025-10-25 14:25:27.801 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 299.5472ms
+2025-10-25 14:25:27.871 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:25:27.962 +02:00 [ERR] Erreur non gérée capturée par le middleware.
+System.IO.FileNotFoundException: Le fichier JSON est introuvable.
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 23
+   at Infrastructure.Repositories.PlayerRepository.GetAll() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Repositories\PlayerRepository.cs:line 23
+   at Application.Services.PlayerService.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\Application\Services\PlayerService.cs:line 21
+   at API.Controllers.PlayersController.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Controllers\PlayersController.cs:line 27
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Middlewares\ExceptionMiddleware.cs:line 21
+2025-10-25 14:25:27.995 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 404 null application/json; charset=utf-8 535.2183ms
+2025-10-25 14:26:04.499 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 14:26:04.883 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 14:26:04.893 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 14:26:05.633 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 14:26:05.635 +02:00 [INF] Hosting environment: Development
+2025-10-25 14:26:05.636 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 14:26:05.685 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 14:26:05.933 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 14:26:05.935 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 256.244ms
+2025-10-25 14:26:05.935 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 14:26:05.960 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 27.7122ms
+2025-10-25 14:26:05.988 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 55.2397ms
+2025-10-25 14:26:06.079 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 14:26:06.118 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 39.674ms
+2025-10-25 14:26:09.187 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:26:09.199 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:26:09.226 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:26:09.231 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:26:09.427 +02:00 [ERR] Erreur lors de la lecture du fichier JSON.
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.List`1[Domain.Entities.Player]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 26
+2025-10-25 14:26:09.648 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 415.8682ms
+2025-10-25 14:26:09.707 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:26:09.796 +02:00 [ERR] Erreur non gérée capturée par le middleware.
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.List`1[Domain.Entities.Player]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 26
+   at Infrastructure.Repositories.PlayerRepository.GetAll() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Repositories\PlayerRepository.cs:line 23
+   at Application.Services.PlayerService.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\Application\Services\PlayerService.cs:line 21
+   at API.Controllers.PlayersController.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Controllers\PlayersController.cs:line 27
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Middlewares\ExceptionMiddleware.cs:line 21
+2025-10-25 14:26:09.829 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 500 null application/json; charset=utf-8 642.5382ms
+2025-10-25 14:27:25.972 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 14:27:26.393 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 14:27:26.397 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 14:27:26.441 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 14:27:26.443 +02:00 [INF] Hosting environment: Development
+2025-10-25 14:27:26.445 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 14:27:27.043 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 14:27:27.306 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 271.153ms
+2025-10-25 14:27:27.321 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 14:27:27.321 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 14:27:27.357 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 35.5542ms
+2025-10-25 14:27:27.411 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.2305ms
+2025-10-25 14:27:27.472 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 14:27:27.495 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.0917ms
+2025-10-25 14:27:30.687 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:27:30.695 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:27:30.718 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:27:30.723 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:27:30.862 +02:00 [ERR] Erreur lors de la lecture du fichier JSON.
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.List`1[Domain.Entities.Player]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 26
+2025-10-25 14:27:31.085 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 358.3155ms
+2025-10-25 14:27:31.162 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:27:31.250 +02:00 [ERR] Erreur non gérée capturée par le middleware.
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.List`1[Domain.Entities.Player]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 26
+   at Infrastructure.Repositories.PlayerRepository.GetAll() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Repositories\PlayerRepository.cs:line 23
+   at Application.Services.PlayerService.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\Application\Services\PlayerService.cs:line 21
+   at API.Controllers.PlayersController.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Controllers\PlayersController.cs:line 27
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Middlewares\ExceptionMiddleware.cs:line 21
+2025-10-25 14:27:31.283 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 500 null application/json; charset=utf-8 596.1898ms
+2025-10-25 14:28:00.923 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:28:00.947 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:28:00.950 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:28:00.954 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:30:56.801 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 14:30:57.244 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 14:30:57.248 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 14:30:57.303 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 14:30:57.306 +02:00 [INF] Hosting environment: Development
+2025-10-25 14:30:57.307 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 14:30:58.174 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 14:30:58.429 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 266.2287ms
+2025-10-25 14:30:58.434 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 14:30:58.434 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 14:30:58.450 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 16.405ms
+2025-10-25 14:30:58.497 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 63.4331ms
+2025-10-25 14:30:58.561 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 14:30:58.580 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 19.4037ms
+2025-10-25 14:31:01.905 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:31:01.921 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:31:01.955 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:31:01.960 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:31:06.147 +02:00 [ERR] Erreur lors de la lecture du fichier JSON.
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.List`1[Domain.Entities.Player]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 26
+2025-10-25 14:31:06.366 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 4405.9727ms
+2025-10-25 14:31:06.426 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:31:06.511 +02:00 [ERR] Erreur non gérée capturée par le middleware.
+System.Text.Json.JsonException: The JSON value could not be converted to System.Collections.Generic.List`1[Domain.Entities.Player]. Path: $ | LineNumber: 0 | BytePositionInLine: 1.
+   at System.Text.Json.ThrowHelper.ThrowJsonException_DeserializeUnableToConvertValue(Type propertyType)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, TCollection& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 utf8Json, JsonTypeInfo`1 jsonTypeInfo, Nullable`1 actualByteCount)
+   at System.Text.Json.JsonSerializer.ReadFromSpan[TValue](ReadOnlySpan`1 json, JsonTypeInfo`1 jsonTypeInfo)
+   at System.Text.Json.JsonSerializer.Deserialize[TValue](String json, JsonSerializerOptions options)
+   at Infrastructure.Handlers.JsonFileHandler.ReadFromFile[T]() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Persistence\JsonFileHandler.cs:line 26
+   at Infrastructure.Repositories.PlayerRepository.GetAll() in C:\Users\Lenovo2025\source\repos\TennisAPI\Infrastructure\Repositories\PlayerRepository.cs:line 25
+   at Application.Services.PlayerService.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\Application\Services\PlayerService.cs:line 21
+   at API.Controllers.PlayersController.GetAllPlayers() in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Controllers\PlayersController.cs:line 27
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at API.Middlewares.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\Lenovo2025\source\repos\TennisAPI\API\Middlewares\ExceptionMiddleware.cs:line 21
+2025-10-25 14:31:06.535 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 500 null application/json; charset=utf-8 4630.9309ms
+2025-10-25 14:38:42.536 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 14:38:42.942 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 14:38:42.948 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 14:38:43.431 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 14:38:43.435 +02:00 [INF] Hosting environment: Development
+2025-10-25 14:38:43.443 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 14:38:43.614 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 14:38:43.867 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 263.6096ms
+2025-10-25 14:38:43.879 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 14:38:43.879 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 14:38:43.892 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 13.5796ms
+2025-10-25 14:38:43.961 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.4345ms
+2025-10-25 14:38:44.016 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 14:38:44.038 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.5856ms
+2025-10-25 14:38:49.597 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:38:49.607 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:38:49.640 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:38:49.649 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:38:49.672 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Entities.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 14:38:49.685 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 36.7149ms
+2025-10-25 14:38:49.687 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:38:49.688 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 92.154ms
+2025-10-25 14:48:21.099 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 14:48:21.384 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 14:48:21.389 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 14:48:21.434 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 14:48:21.436 +02:00 [INF] Hosting environment: Development
+2025-10-25 14:48:21.437 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 14:48:22.043 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 14:48:22.301 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 267.2149ms
+2025-10-25 14:48:22.312 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 14:48:22.313 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 14:48:22.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 20.3081ms
+2025-10-25 14:48:22.402 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 90.4165ms
+2025-10-25 14:48:22.477 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 14:48:22.506 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 29.3583ms
+2025-10-25 14:50:08.550 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 14:50:08.566 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:50:08.597 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 14:50:08.603 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 14:50:08.623 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Entities.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 14:50:08.633 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 30.8546ms
+2025-10-25 14:50:08.638 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 14:50:08.640 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 90.0743ms
+2025-10-25 14:50:23.584 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/17 - null null
+2025-10-25 14:50:23.590 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetPlayerById (API)'
+2025-10-25 14:50:23.599 +02:00 [INF] Route matched with {action = "GetPlayerById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPlayerById(Int32) on controller API.Controllers.PlayersController (API).
+2025-10-25 14:50:23.628 +02:00 [INF] Récupération du joueur avec ID 17
+2025-10-25 14:50:23.632 +02:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Entities.Player'.
+2025-10-25 14:50:23.635 +02:00 [INF] Executed action API.Controllers.PlayersController.GetPlayerById (API) in 31.3852ms
+2025-10-25 14:50:23.638 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetPlayerById (API)'
+2025-10-25 14:50:23.641 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/17 - 200 null application/json; charset=utf-8 58.6047ms
+2025-10-25 14:51:09.354 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7109/api/Players - application/json 430
+2025-10-25 14:51:09.364 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 14:51:09.368 +02:00 [INF] Route matched with {action = "AddPlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddPlayer(Domain.Entities.Player) on controller API.Controllers.PlayersController (API).
+2025-10-25 14:51:09.396 +02:00 [INF] Ajout d’un nouveau joueur : Roger Federer
+2025-10-25 14:51:09.409 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'Domain.Entities.Player'.
+2025-10-25 14:51:09.429 +02:00 [INF] Executed action API.Controllers.PlayersController.AddPlayer (API) in 58.4207ms
+2025-10-25 14:51:09.433 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 14:51:09.434 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7109/api/Players - 201 null application/json; charset=utf-8 80.2226ms
+2025-10-25 14:51:31.435 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/103 - null null
+2025-10-25 14:51:31.471 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetPlayerById (API)'
+2025-10-25 14:51:31.474 +02:00 [INF] Route matched with {action = "GetPlayerById", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPlayerById(Int32) on controller API.Controllers.PlayersController (API).
+2025-10-25 14:51:31.478 +02:00 [INF] Récupération du joueur avec ID 103
+2025-10-25 14:51:31.484 +02:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Entities.Player'.
+2025-10-25 14:51:31.487 +02:00 [INF] Executed action API.Controllers.PlayersController.GetPlayerById (API) in 9.3845ms
+2025-10-25 14:51:31.489 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetPlayerById (API)'
+2025-10-25 14:51:31.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/103 - 200 null application/json; charset=utf-8 57.0504ms
+2025-10-25 14:51:31.547 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/favicon.ico - null null
+2025-10-25 14:51:31.551 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/favicon.ico - 404 0 null 5.7444ms
+2025-10-25 14:51:31.556 +02:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7109/favicon.ico, Response status code: 404
+2025-10-25 15:11:20.484 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 15:11:20.886 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 15:11:20.892 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 15:11:21.086 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 15:11:21.088 +02:00 [INF] Hosting environment: Development
+2025-10-25 15:11:21.090 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 15:11:21.466 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 15:11:21.692 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 235.9492ms
+2025-10-25 15:11:21.701 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 15:11:21.702 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 15:11:21.723 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 22.6953ms
+2025-10-25 15:11:21.877 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 176.6174ms
+2025-10-25 15:11:21.931 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 15:11:21.948 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 17.3509ms
+2025-10-25 15:13:41.540 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/stats - null null
+2025-10-25 15:13:41.552 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-25 15:13:41.576 +02:00 [INF] Route matched with {action = "GetStats", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetStats() on controller API.Controllers.PlayersController (API).
+2025-10-25 15:13:41.582 +02:00 [INF] Récupération des statistiques des joueurs.
+2025-10-25 15:13:41.622 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`4[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 15:13:41.636 +02:00 [INF] Executed action API.Controllers.PlayersController.GetStats (API) in 53.3236ms
+2025-10-25 15:13:41.639 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-25 15:13:41.640 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/stats - 200 null application/json; charset=utf-8 101.6136ms
+2025-10-25 15:15:06.059 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 15:15:06.445 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 15:15:06.449 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 15:15:06.978 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 15:15:06.980 +02:00 [INF] Hosting environment: Development
+2025-10-25 15:15:06.983 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 15:15:07.056 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 15:15:07.286 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 15:15:07.286 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 15:15:07.291 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 241.9642ms
+2025-10-25 15:15:07.311 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 24.571ms
+2025-10-25 15:15:07.370 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.352ms
+2025-10-25 15:15:07.445 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 15:15:07.462 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 16.9213ms
+2025-10-25 15:15:26.963 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/stats - null null
+2025-10-25 15:15:26.975 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-25 15:15:27.003 +02:00 [INF] Route matched with {action = "GetStats", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetStats() on controller API.Controllers.PlayersController (API).
+2025-10-25 15:15:27.009 +02:00 [INF] Récupération des statistiques des joueurs.
+2025-10-25 15:15:27.044 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 15:15:27.057 +02:00 [INF] Executed action API.Controllers.PlayersController.GetStats (API) in 47.4765ms
+2025-10-25 15:15:27.060 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-25 15:15:27.061 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/stats - 200 null application/json; charset=utf-8 99.7328ms
+2025-10-25 15:16:05.743 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 15:16:06.073 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 15:16:06.080 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 15:16:06.133 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 15:16:06.136 +02:00 [INF] Hosting environment: Development
+2025-10-25 15:16:06.137 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 15:16:06.863 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 15:16:07.103 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 15:16:07.104 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 15:16:07.105 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 253.6718ms
+2025-10-25 15:16:07.140 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 36.7863ms
+2025-10-25 15:16:07.205 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 102.4151ms
+2025-10-25 15:16:07.309 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 15:16:07.333 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 25.642ms
+2025-10-25 15:16:13.344 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players/stats - null null
+2025-10-25 15:16:13.358 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-25 15:16:13.390 +02:00 [INF] Route matched with {action = "GetStats", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetStats() on controller API.Controllers.PlayersController (API).
+2025-10-25 15:16:13.398 +02:00 [INF] Récupération des statistiques des joueurs.
+2025-10-25 15:16:13.437 +02:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`3[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Double, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 15:16:13.456 +02:00 [INF] Executed action API.Controllers.PlayersController.GetStats (API) in 57.4854ms
+2025-10-25 15:16:13.459 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetStats (API)'
+2025-10-25 15:16:13.460 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players/stats - 200 null application/json; charset=utf-8 116.9968ms
+2025-10-25 15:31:41.135 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 15:31:41.409 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 15:31:41.414 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 15:31:41.475 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 15:31:41.478 +02:00 [INF] Hosting environment: Development
+2025-10-25 15:31:41.479 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 15:31:41.928 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 15:31:42.169 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 252.5122ms
+2025-10-25 15:31:42.171 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 15:31:42.171 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 15:31:42.196 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 24.8476ms
+2025-10-25 15:31:42.243 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 72.5149ms
+2025-10-25 15:31:42.301 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 15:31:42.325 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.5256ms
+2025-10-25 15:31:47.183 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 15:31:47.195 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:31:47.223 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 15:31:47.229 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 15:31:47.249 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Entities.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 15:31:47.260 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 30.6117ms
+2025-10-25 15:31:47.262 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:31:47.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 81.5217ms
+2025-10-25 15:32:32.095 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7109/api/Players - application/json 980
+2025-10-25 15:32:32.106 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 15:32:32.114 +02:00 [INF] Route matched with {action = "AddPlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddPlayer(Domain.Entities.Player) on controller API.Controllers.PlayersController (API).
+2025-10-25 15:32:32.366 +02:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-25 15:32:32.384 +02:00 [INF] Executed action API.Controllers.PlayersController.AddPlayer (API) in 266.2449ms
+2025-10-25 15:32:32.386 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 15:32:32.388 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7109/api/Players - 400 null application/problem+json; charset=utf-8 293.1663ms
+2025-10-25 15:33:10.377 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7109/api/Players - application/json 485
+2025-10-25 15:33:10.394 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 15:33:10.395 +02:00 [INF] Route matched with {action = "AddPlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddPlayer(Domain.Entities.Player) on controller API.Controllers.PlayersController (API).
+2025-10-25 15:33:10.416 +02:00 [INF] Ajout d’un nouveau joueur : Salim Benabdellah
+2025-10-25 15:33:10.428 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'Domain.Entities.Player'.
+2025-10-25 15:33:10.449 +02:00 [INF] Executed action API.Controllers.PlayersController.AddPlayer (API) in 52.1868ms
+2025-10-25 15:33:10.452 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 15:33:10.455 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7109/api/Players - 201 null application/json; charset=utf-8 82.1601ms
+2025-10-25 15:33:36.988 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 15:33:37.001 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:33:37.004 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 15:33:37.007 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 15:33:37.011 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Entities.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 15:33:37.013 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 5.3645ms
+2025-10-25 15:33:37.015 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:33:37.016 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 30.1442ms
+2025-10-25 15:35:23.942 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 15:35:24.328 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 15:35:24.333 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 15:35:24.404 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 15:35:24.406 +02:00 [INF] Hosting environment: Development
+2025-10-25 15:35:24.407 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 15:35:25.297 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 15:35:26.127 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 840.6498ms
+2025-10-25 15:35:26.137 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 15:35:26.143 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 15:35:26.171 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 27.7791ms
+2025-10-25 15:35:26.212 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.6774ms
+2025-10-25 15:35:26.334 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 15:35:26.361 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 27.432ms
+2025-10-25 15:35:29.711 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 15:35:29.724 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:35:29.751 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 15:35:29.756 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 15:35:29.785 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Entities.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 15:35:29.798 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 39.9599ms
+2025-10-25 15:35:29.800 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:35:29.801 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 91.516ms
+2025-10-25 15:40:14.028 +02:00 [INF] Application Tennis API démarrée
+2025-10-25 15:40:14.464 +02:00 [INF] Now listening on: https://localhost:7109
+2025-10-25 15:40:14.469 +02:00 [INF] Now listening on: http://localhost:5146
+2025-10-25 15:40:14.523 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-25 15:40:14.525 +02:00 [INF] Hosting environment: Development
+2025-10-25 15:40:14.526 +02:00 [INF] Content root path: C:\Users\Lenovo2025\source\repos\TennisAPI\API
+2025-10-25 15:40:15.592 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/index.html - null null
+2025-10-25 15:40:15.894 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_vs/browserLink - null null
+2025-10-25 15:40:15.894 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-25 15:40:15.898 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/index.html - 200 null text/html;charset=utf-8 314.4026ms
+2025-10-25 15:40:15.925 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_framework/aspnetcore-browser-refresh.js - 200 16491 application/javascript; charset=utf-8 28.1595ms
+2025-10-25 15:40:15.983 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.887ms
+2025-10-25 15:40:16.054 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - null null
+2025-10-25 15:40:16.076 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.5368ms
+2025-10-25 15:40:19.459 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7109/api/Players - null null
+2025-10-25 15:40:19.482 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:40:19.520 +02:00 [INF] Route matched with {action = "GetAllPlayers", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllPlayers() on controller API.Controllers.PlayersController (API).
+2025-10-25 15:40:19.527 +02:00 [INF] Récupération de la liste des joueurs.
+2025-10-25 15:40:19.555 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.OrderedEnumerable`2[[Domain.Entities.Player, Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-25 15:40:19.568 +02:00 [INF] Executed action API.Controllers.PlayersController.GetAllPlayers (API) in 40.7073ms
+2025-10-25 15:40:19.570 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.GetAllPlayers (API)'
+2025-10-25 15:40:19.571 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7109/api/Players - 200 null application/json; charset=utf-8 112.7418ms
+2025-10-25 15:40:54.235 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7109/api/Players - application/json 475
+2025-10-25 15:40:54.238 +02:00 [INF] Executing endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 15:40:54.253 +02:00 [INF] Route matched with {action = "AddPlayer", controller = "Players"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddPlayer(Domain.Entities.Player) on controller API.Controllers.PlayersController (API).
+2025-10-25 15:40:54.299 +02:00 [INF] Ajout d’un nouveau joueur : Roger Federer
+2025-10-25 15:40:54.315 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'Domain.Entities.Player'.
+2025-10-25 15:40:54.342 +02:00 [INF] Executed action API.Controllers.PlayersController.AddPlayer (API) in 85.6283ms
+2025-10-25 15:40:54.346 +02:00 [INF] Executed endpoint 'API.Controllers.PlayersController.AddPlayer (API)'
+2025-10-25 15:40:54.348 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7109/api/Players - 201 null application/json; charset=utf-8 113.4033ms
