@@ -28,7 +28,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Injection des dépendances
+// Injection des dÃ©pendances
 builder.Services.AddSingleton<IJsonFileHandler,JsonFileHandler>();
 builder.Services.AddScoped<IPlayerRepository, PlayerRepository>();
 builder.Services.AddScoped<IPlayerService,PlayerService>();
@@ -40,26 +40,26 @@ var app = builder.Build();
 // -----------------------------------------------------
 app.UseMiddleware<ExceptionMiddleware>();
 
-if (app.Environment.IsDevelopment())
-{
+//if (app.Environment.IsDevelopment())
+//{
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 app.UseHttpsRedirection();
 app.MapControllers();
 
 // -----------------------------------------------------
-//  DÉMARRAGE DE L'APPLICATION
+//  DÃ‰MARRAGE DE L'APPLICATION
 // -----------------------------------------------------
 try
 {
-    Log.Information("Application Tennis API démarrée");
+    Log.Information("Application Tennis API dÃ©marrÃ©e");
     app.Run();
 }
 catch (Exception ex)
 {
-    Log.Fatal(ex, "Erreur critique lors du démarrage de l'application.");
+    Log.Fatal(ex, "Erreur critique lors du dÃ©marrage de l'application.");
 }
 finally
 {
